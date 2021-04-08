@@ -5,12 +5,13 @@ public class Main {
 
     Material[] materials = new Material[5];
     materials[0] = new Meat("ds","helo",LocalDate.now().plusDays(6),30,20);
-//    ManagerMaterial managerMaterials = new ManagerMaterial();
-//    ManagerMaterial.setMaterials(materials);
+    materials[1] = new CrispyFlour("ds","helo",LocalDate.now().plusDays(6),30,20);
+
     for (Material opp : materials){
         if(opp!= null){
             System.out.println(  opp.getRealMoney());
             System.out.println(  opp.getPriceDifferent());
+            System.out.println(opp.toString());
         }
 
     }
